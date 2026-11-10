@@ -1,92 +1,160 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#10243a">
-  <meta name="description" content="Rehema House Property Manager">
-  <title>Rehema House Property Manager</title>
+  <title>Beautiful Courts Christian Church | Home</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
-  <div id="toast" class="toast" role="status"></div>
 
-  <section id="authScreen" class="auth-screen">
-    <div class="auth-card">
-      <div class="brand-mark">RH</div>
-      <p class="eyebrow">REHEMA ESTATE</p>
-      <h1>Property Manager</h1>
-      <p class="muted">Manage your properties, tenants and payments.</p>
-      <form id="loginForm">
-        <label for="email">Email address</label>
-        <input id="email" type="email" autocomplete="username" required
-          placeholder="Enter your email">
-        <label for="password">Password</label>
-        <input id="password" type="password" autocomplete="current-password"
-          required placeholder="Enter your password">
-        <button class="btn primary full" type="submit">Sign in</button>
-      </form>
-      <button id="forgotPassword" class="text-button">Forgot password?</button>
-      <p class="muted small">Private access for authorised users only.</p>
-    </div>
-  </section>
+<header class="header">
+  <a class="brand" href="index.html">
+    <img src="images/Untitled design.png" alt="BCCC Logo">
+    <span>BEAUTIFUL COURTS<br><small>CHRISTIAN CHURCH</small></span>
+  </a>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav id="navigation">
+    <a class="active" href="index.html">Home</a>
+    <a href="branches.html">Our Branches</a>
+    <a href="ministries.html">Ministries</a>
+    <a href="event.html">Events</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
 
-  <div id="app" class="app hidden">
-    <aside id="sidebar" class="sidebar">
-      <div class="brand">
-        <div class="brand-mark small-mark">RH</div>
-        <div><strong>REHEMA ESTATE</strong><small>Property Manager</small></div>
-      </div>
-
-      <nav class="navigation">
-        <p class="nav-heading">WORKSPACE</p>
-        <button class="nav-link active" data-page="dashboard">▦ <span>Dashboard</span></button>
-        <button class="nav-link" data-page="record">＋ <span>Record Manager</span></button>
-        <button class="nav-link" data-page="receipts">▤ <span>Receipts</span></button>
-        <button class="nav-link" data-page="history">◷ <span>Payment History</span></button>
-        <button class="nav-link" data-page="tenants">♙ <span>Tenants</span></button>
-        <button class="nav-link" data-page="houses">⌂ <span>Houses</span></button>
-        <button class="nav-link" data-page="arrears">↗ <span>Areas / Arrears</span></button>
-        <button class="nav-link" data-page="reports">▧ <span>Reports & Statements</span></button>
-        <p class="nav-heading">PREFERENCES</p>
-        <button class="nav-link" data-page="settings">⚙ <span>Settings</span></button>
-      </nav>
-
-      <div class="sidebar-bottom">
-        <span class="online-dot"></span><span id="connectionStatus">Checking connection…</span>
-        <button id="signOut" class="btn outline full">Sign out</button>
-      </div>
-    </aside>
-
-    <main class="main">
-      <header class="topbar">
-        <button id="menuToggle" class="icon-button" aria-label="Toggle menu">☰</button>
-        <div>
-          <p class="eyebrow">REHEMA ESTATE</p>
-          <h2 id="pageTitle">Dashboard</h2>
-        </div>
-        <div class="topbar-right">
-          <span id="syncStatus" class="status-pill">Checking sync</span>
-          <button id="refreshButton" class="btn outline">↻ Refresh</button>
-        </div>
-      </header>
-
-      <div id="pageContent" class="content">
-        <section class="welcome">
-          <div><p class="eyebrow">PROPERTY OVERVIEW</p><h1>Welcome back</h1>
-          <p class="muted">Here's what's happening with your estate.</p></div>
-          <button class="btn primary" data-go="record">＋ Record payment</button>
-        </section>
-        <div class="loading">Loading your dashboard…</div>
-      </div>
-     </main>
+<section class="hero home-hero">
+  <div class="hero-content">
+    <p class="eyebrow">WELCOME TO</p>
+    <h1>BEAUTIFUL COURTS<br>CHRISTIAN CHURCH</h1>
+    <h2>COME AND TASTE THE DIFFERENCE.</h2>
+    <p>Growing in faith, serving in love, and reaching the world with the Gospel.</p>
+    <a class="btn" href="about.html">DISCOVER OUR CHURCH</a>
   </div>
+</section>
 
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-  <script src="script.js"></script>
+<section class="section intro">
+  <p class="eyebrow">A PLACE TO BELONG</p>
+  <h2>Welcome Home</h2>
+  <p>We are a family of believers committed to worshipping God, growing in His Word, serving our communities and sharing the Gospel of Jesus Christ.</p>
+  <p><strong>Our Scripture:</strong> Genesis 1:28</p>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <p class="eyebrow">OUR CHURCH FAMILY</p>
+    <h2>Experience Beautiful Courts</h2>
+  </div>
+  <div class="photo-grid three">
+    <img src="images/2.jpg" alt="Church gathering">
+    <img src="images/5.jpg" alt="Church worship">
+    <img src="images/8.jpg" alt="Church fellowship">
+  </div>
+</section>
+
+<section class="section light">
+  <div class="section-heading">
+    <p class="eyebrow">GET CONNECTED</p>
+    <h2>Discover Our Church</h2>
+  </div>
+  <div class="cards three">
+    <article class="card">
+      <img src="images/HQ.jpg" alt="BCCC Headquarters">
+      <div class="card-body">
+        <h3>Our Branches</h3>
+        <p>Find a Beautiful Courts Christian Church branch and worship with us.</p>
+        <a href="branches.html" class="text-link">Explore Branches →</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/praise and worship.jpg" alt="Praise and Worship">
+      <div class="card-body">
+        <h3>Our Ministries</h3>
+        <p>Discover the different ministries serving God and His people.</p>
+        <a href="ministries.html" class="text-link">Explore Ministries →</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/0.jpg" alt="Church event">
+      <div class="card-body">
+        <h3>Church Events</h3>
+        <p>Stay informed about our upcoming gatherings and special programmes.</p>
+        <a href="event.html" class="text-link">View Events →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section service-section">
+  <p class="eyebrow">WORSHIP WITH US</p>
+  <h2>Our Weekly Services</h2>
+  <div class="cards two">
+    <article class="info-card">
+      <h3>Teens and Youth Sunday Service</h3>
+      <p>Every Sunday — 7:45 AM</p>
+      <p>BCCC Headquarters, Mawanga Kwa Buda</p>
+    </article>
+    <article class="info-card">
+      <h3>Main Church Sunday Service</h3>
+      <p>Every Sunday — 9:00 AM</p>
+      <p>BCCC Headquarters, Mawanga Kwa Buda</p>
+    </article>
+    <article class="info-card">
+      <h3>Thursday Lunch Hour Service</h3>
+      <p>Every Thursday — 12:30 PM</p>
+      <p>Utawala Chapel, Nakuru Town</p>
+    </article>
+    <article class="info-card">
+      <h3>Friday Lunch Hour Service</h3>
+      <p>Every Friday — 12:30 PM</p>
+      <p>Utawala Chapel, Nakuru Town</p>
+    </article>
+  </div>
+</section>
+
+<section class="subscribe-section">
+  <div>
+    <p class="eyebrow">STAY CONNECTED</p>
+    <h2>Would you like to receive updates on our church events?</h2>
+    <p>Subscribe to receive news and announcements from BCCC.</p>
+  </div>
+  <form class="subscribe-form" onsubmit="subscribe(event)">
+    <input type="text" id="subscriberName" placeholder="Your full name" required>
+    <input type="email" id="subscriberEmail" placeholder="Your email address" required>
+    <input type="tel" id="subscriberPhone" placeholder="Your WhatsApp number">
+    <label class="consent"><input type="checkbox" required> I agree to receive church updates.</label>
+    <button class="btn" type="submit">SUBSCRIBE</button>
+    <p id="subscribeMessage"></p>
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h3>BEAUTIFUL COURTS<br>CHRISTIAN CHURCH</h3>
+      <p>Come and Taste the Difference.</p>
+      <p>Growing in faith, serving in love, and reaching the world with the Gospel.</p>
+    </div>
+    <div>
+      <h3>QUICK LINKS</h3>
+      <a href="index.html">Home</a>
+      <a href="branches.html">Our Branches</a>
+      <a href="ministries.html">Ministries</a>
+      <a href="event.html">Events</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div>
+      <h3>CONTACT US</h3>
+      <p>Mawanga, Kwa Buda, Nakuru, Kenya</p>
+      <p>0722994801</p>
+      <p>beautifulcourtschurch2001@gmail.com</p>
+    </div>
+  </div>
+  <div class="copyright">© 2026 Beautiful Courts Christian Church. All Rights Reserved.</div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
