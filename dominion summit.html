@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominion Summit 2026 | BCCC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="index.html"><img src="images/Untitled design.png" alt="BCCC Logo"><span>BEAUTIFUL COURTS<br><small>CHRISTIAN CHURCH</small></span></a>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav id="navigation">
+    <a href="index.html">Home</a><a href="branches.html">Our Branches</a><a href="ministries.html">Ministries</a><a class="active" href="event.html">Events</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+
+<section class="page-hero" style="background-image:url('images/15.png')">
+  <div><p class="eyebrow">19TH ANNUAL BELIEVERS CONVENTION</p><h1>DOMINION SUMMIT 2026</h1><p>7TH–13TH DECEMBER 2026</p></div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <p class="eyebrow">GROWING AND PREVAILING</p>
+    <h2>Dominion Summit 2026</h2>
+    <p class="summit-theme">“GROWING AND PREVAILING”</p>
+    <p><strong>Acts 19:20</strong></p>
+    <p>7th–13th December 2026</p>
+    <p>BCCC Headquarters, Mawanga Kwa Buda, Nakuru</p>
+    <p><strong>Registration is FREE.</strong></p>
+  </div>
+
+  <div class="info-card">
+    <h3>Summit Registration</h3>
+    <p>Complete the form below to register your attendance.</p>
+    <form class="registration-form" onsubmit="registerSummit(event)">
+      <label>Full Name</label>
+      <input id="summitName" type="text" required placeholder="Enter your full name">
+      <label>Phone Number</label>
+      <input id="summitPhone" type="tel" required placeholder="Enter your phone number">
+      <label>Email Address</label>
+      <input id="summitEmail" type="email" required placeholder="Enter your email">
+      <label>Attendance Type</label>
+      <select id="attendanceType" required>
+        <option value="">Select attendance type</option>
+        <option value="Boarder">Boarder</option>
+        <option value="Day Scholar">Day Scholar</option>
+      </select>
+      <label>Attending From</label>
+      <input id="dateFrom" type="date" min="2026-12-07" max="2026-12-13" required>
+      <label>Attending To</label>
+      <input id="dateTo" type="date" min="2026-12-07" max="2026-12-13" required>
+      <button type="submit" class="btn">SUBMIT REGISTRATION</button>
+      <p id="registrationMessage"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid"><div><h3>BEAUTIFUL COURTS<br>CHRISTIAN CHURCH</h3><p>Come and Taste the Difference.</p></div><div><h3>QUICK LINKS</h3><a href="index.html">Home</a><a href="event.html">Events</a><a href="about.html">About Us</a></div><div><h3>CONTACT US</h3><p>0722994801</p><p>beautifulcourtschurch2001@gmail.com</p></div></div>
+  <div class="copyright">© 2026 Beautiful Courts Christian Church. All Rights Reserved.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
